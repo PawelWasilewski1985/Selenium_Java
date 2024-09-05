@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Framework Suite">
+
+    <!-- Test for Google on Chrome -->
+    <test name="Google Tests - Chrome">
+        <parameter name="browser" value="chrome" />  <!-- Parameter for browser -->
+        <parameter name="application" value="GOOGLE" />  <!-- Parameter for application -->
+        <classes>
+            <class name="tests.SeleniumGoogle" />
+        </classes>
+    </test>
+
+    <!-- Test for Google on Firefox -->
+    <test name="Google Tests - Firefox">
+        <parameter name="browser" value="firefox" />  <!-- Parameter for browser -->
+        <parameter name="application" value="GOOGLE" />  <!-- Parameter for application -->
+        <classes>
+            <class name="tests.SeleniumGoogle" />
+        </classes>
+    </test>
+
+    <test name="Automation Exercise Tests Tests - Chrome">
+        <parameter name="browser" value="chrome" />  <!-- Parameter for browser -->
+        <parameter name="application" value="AutomationExercise" />  <!-- Parameter for application -->
+        <classes>
+            <class name="tests.AutomationExerciseTests" />
+        </classes>
+    </test>
+
+    <!-- Additional tests for other configurations -->
+</suite>
